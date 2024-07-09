@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import HabitTracker from './components/HabitTracker';
+import HabitTracker from './HabitTracker';
 import './index.css';
 
 ReactDOM.render(
