@@ -13,14 +13,12 @@ ReactDOM.render(
 );
 
 // src/components/HabitTracker.js
-import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
 import HabitList from './HabitList';
 import AddHabitForm from './AddHabitForm';
 import HabitDetail from './HabitDetail';
 import Statistics from './Statistics';
 
-const HabitTracker = () => {
+  HabitTracker = () => {
   const [habits, setHabits] = useState([]);
 
   const addHabit = (habit) => {
@@ -52,10 +50,9 @@ const HabitTracker = () => {
 };
 
 // src/components/HabitList.js
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HabitList = ({ habits }) => (
+  HabitList = ({ habits }) => (
   <div>
     <h1>Habits</h1>
     <Link to="/add">Add Habit</Link>
@@ -70,10 +67,9 @@ const HabitList = ({ habits }) => (
 );
 
 // src/components/AddHabitForm.js
-import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 
-const AddHabitForm = ({ addHabit }) => {
+  AddHabitForm = ({ addHabit }) => {
   const [name, setName] = useState('');
   const history = useHistory();
 
@@ -101,10 +97,9 @@ const AddHabitForm = ({ addHabit }) => {
 };
 
 // src/components/HabitDetail.js
-import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 
-const HabitDetail = ({ habits, updateHabit }) => {
+  HabitDetail = ({ habits, updateHabit }) => {
   const { id } = useParams();
   const habit = habits.find(h => h.id === parseInt(id));
   const history = useHistory();
@@ -134,10 +129,9 @@ const HabitDetail = ({ habits, updateHabit }) => {
 export default HabitDetail;
 
 // src/components/Statistics.js
-import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 
-const Statistics = ({ habits }) => {
+  Statistics = ({ habits }) => {
   const data = habits.map(habit => ({
     name: habit.name,
     progress: habit.progress.length
