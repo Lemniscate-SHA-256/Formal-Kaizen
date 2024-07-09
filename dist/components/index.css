@@ -1,69 +1,69 @@
 /* src/index.css */
-body 
-    font-family Arial, sans-serif;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-  
-  
-  h1 {
+}
+
+h1 {
     color: #333;
     margin-bottom: 10px;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  li {
+}
+
+li {
     margin-bottom: 5px;
-  }
-  
-  a {
+}
+
+a {
     color: #413ea0;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  button {
+}
+
+button {
     background-color: #413ea0;
     color: white;
     border: none;
     border-radius: 4px;
     padding: 8px 12px;
     cursor: pointer;
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background-color: #333;
-  }
-  
-  input {
+}
+
+input {
     padding: 8px;
     border-radius: 4px;
     border: 1px solid #ccc;
-  }
-  
-  /* Recharts styles */
-  .recharts-wrapper {
+}
+
+/* Recharts styles */
+.recharts-wrapper {
     margin-top: 20px;
-  }
-  
-  .recharts-cartesian-grid-horizontal line,
-  .recharts-cartesian-grid-vertical line {
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
     stroke: #f5f5f5;
-  }
-  
-  .recharts-tooltip-wrapper {
+}
+
+.recharts-tooltip-wrapper {
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 10px;
     border-radius: 4px;
-  }
-  
-  .recharts-tooltip-item-list-item {
+}
+
+.recharts-tooltip-item-list-item {
     color: white;
-  }
+}
