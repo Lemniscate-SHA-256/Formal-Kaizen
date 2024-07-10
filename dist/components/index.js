@@ -8,7 +8,7 @@ var _react = _interopRequireDefault(require("react"));
 var _reactDom = _interopRequireDefault(require("react-dom"));
 var _reactRouterDom = require("react-router-dom");
 var _HabitTracker = _interopRequireDefault(require("./HabitTracker"));
-require("./index.css");
+require("./Documents/Formal_Kaizen/src/index.css");
 var _HabitList = _interopRequireDefault(require("./HabitList"));
 var _AddHabitForm = _interopRequireDefault(require("./AddHabitForm"));
 var _HabitDetail = _interopRequireDefault(require("./HabitDetail"));
